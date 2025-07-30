@@ -1,0 +1,86 @@
+---
+title: Arch Linux Developer Setup
+description: A minimal guide to setting up Arch Linux for development.
+date: 2024-01-26
+author: Typhoon
+categories:
+  - Linux & Systems
+tags:
+  - arch-linux
+  - linux
+  - development-environment
+readingTime: 3
+---
+
+# Arch Linux Developer Setup
+
+A quick overview of setting up Arch Linux for development.
+
+## Why Arch Linux?
+
+- **Rolling Release**: Always up-to-date
+- **Minimal**: Install only what you need
+- **AUR**: Access to extensive software
+- **Documentation**: Excellent wiki
+
+## Essential Packages
+
+```bash
+# Development tools
+sudo pacman -S base-devel git vim neovim
+
+# Languages
+sudo pacman -S nodejs python go rust
+
+# Utilities
+sudo pacman -S docker tmux zsh
+```
+
+## Shell Configuration
+
+Basic Zsh setup:
+
+```bash
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Add to .zshrc
+alias ls='ls --color=auto'
+alias ll='ls -la'
+export EDITOR='vim'
+```
+
+## Development Environment
+
+### Git Setup
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+git config --global init.defaultBranch main
+```
+
+### Docker
+
+```bash
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+```
+
+## System Maintenance
+
+```bash
+# Update system
+sudo pacman -Syu
+
+# Clean package cache
+sudo pacman -Sc
+
+# Remove orphans
+sudo pacman -Rns $(pacman -Qtdq)
+```
+
+## Summary
+
+This demo shows basic Arch Linux setup for developers. The actual setup can be customized based on specific needs.

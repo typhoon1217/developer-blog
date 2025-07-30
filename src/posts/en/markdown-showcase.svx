@@ -1,0 +1,233 @@
+---
+title: 'Markdown Showcase: Code Highlighting & Diagrams'
+date: '2024-01-20'
+updated: '2024-01-20'
+author: 'Typhoon'
+description: 'A showcase of markdown features including syntax highlighting, Mermaid diagrams, and table of contents'
+categories: ['Tutorial', 'Development']
+tags: ['markdown', 'mermaid', 'syntax-highlighting']
+coverImage: ''
+published: true
+readingTime: 5
+---
+
+<script>
+	import Mermaid from '$lib/components/Mermaid.svelte';
+</script>
+
+This post demonstrates the various markdown features available in this blog, including syntax highlighting, Mermaid diagrams, and an auto-generated table of contents.
+
+## Syntax Highlighting
+
+Our blog supports syntax highlighting for various programming languages using Shiki.
+
+### JavaScript Example
+
+```javascript
+// Function to calculate fibonacci numbers
+function fibonacci(n) {
+  if (n <= 1) return n;
+  
+  let prev = 0;
+  let curr = 1;
+  
+  for (let i = 2; i <= n; i++) {
+    const temp = curr;
+    curr = prev + curr;
+    prev = temp;
+  }
+  
+  return curr;
+}
+
+console.log(fibonacci(10)); // 55
+```
+
+### TypeScript Example
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  role: 'admin' | 'user' | 'guest';
+}
+
+class UserService {
+  private users: Map<number, User> = new Map();
+  
+  addUser(user: User): void {
+    this.users.set(user.id, user);
+  }
+  
+  getUser(id: number): User | undefined {
+    return this.users.get(id);
+  }
+  
+  getAllUsers(): User[] {
+    return Array.from(this.users.values());
+  }
+}
+```
+
+### Python Example
+
+```python
+def quicksort(arr):
+    """
+    Implementation of quicksort algorithm
+    """
+    if len(arr) <= 1:
+        return arr
+    
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    
+    return quicksort(left) + middle + quicksort(right)
+
+# Example usage
+numbers = [3, 6, 8, 10, 1, 2, 1]
+sorted_numbers = quicksort(numbers)
+print(sorted_numbers)  # [1, 1, 2, 3, 6, 8, 10]
+```
+
+## Mermaid Diagrams
+
+We also support Mermaid diagrams for creating flowcharts, sequence diagrams, and more.
+
+### Flowchart Example
+
+<Mermaid chart={`
+graph TD
+    A[Start] --> B{Is it working?}
+    B -->|Yes| C[Great!]
+    B -->|No| D[Debug]
+    D --> E[Fix the issue]
+    E --> B
+    C --> F[End]
+`} />
+
+### Sequence Diagram
+
+<Mermaid chart={`
+sequenceDiagram
+    participant Client
+    participant Server
+    participant Database
+    
+    Client->>Server: HTTP Request
+    Server->>Database: Query Data
+    Database-->>Server: Return Results
+    Server-->>Client: HTTP Response
+`} />
+
+### State Diagram
+
+<Mermaid chart={`
+stateDiagram-v2
+    [*] --> Idle
+    Idle --> Loading : Start Request
+    Loading --> Success : Request Successful
+    Loading --> Error : Request Failed
+    Success --> Idle : Reset
+    Error --> Idle : Retry
+`} />
+
+## Markdown Features
+
+### Tables
+
+Here's an example of a markdown table:
+
+| Feature | Support | Description |
+|---------|---------|-------------|
+| Syntax Highlighting | ✅ | Code blocks with language-specific highlighting |
+| Mermaid Diagrams | ✅ | Flow charts, sequence diagrams, and more |
+| Table of Contents | ✅ | Auto-generated from headings |
+| Tables | ✅ | Standard markdown tables |
+| Task Lists | ✅ | Interactive checkboxes |
+
+### Task Lists
+
+- [x] Implement syntax highlighting
+- [x] Add Mermaid diagram support
+- [x] Create table of contents
+- [ ] Add search functionality
+- [ ] Implement comments system
+
+### Blockquotes
+
+> "The best way to predict the future is to invent it."
+> 
+> — Alan Kay
+
+### Lists
+
+#### Unordered List
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
+
+#### Ordered List
+1. First step
+2. Second step
+   1. Sub-step A
+   2. Sub-step B
+3. Third step
+
+## Advanced Code Examples
+
+### React Component
+
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function Timer() {
+  const [seconds, setSeconds] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(prev => prev + 1);
+    }, 1000);
+    
+    return () => clearInterval(interval);
+  }, []);
+  
+  return (
+    <div className="timer">
+      <h2>Timer: {seconds}s</h2>
+      <button onClick={() => setSeconds(0)}>
+        Reset
+      </button>
+    </div>
+  );
+}
+
+export default Timer;
+```
+
+### SQL Query
+
+```sql
+SELECT 
+    u.id,
+    u.name,
+    u.email,
+    COUNT(o.id) as order_count,
+    SUM(o.total_amount) as total_spent
+FROM users u
+LEFT JOIN orders o ON u.id = o.user_id
+WHERE u.created_at >= '2024-01-01'
+GROUP BY u.id, u.name, u.email
+HAVING COUNT(o.id) > 0
+ORDER BY total_spent DESC
+LIMIT 10;
+```
+
+## Conclusion
+
+This blog supports a wide range of markdown features to create rich, interactive content. The combination of syntax highlighting, Mermaid diagrams, and an auto-generated table of contents makes it perfect for technical writing and documentation.

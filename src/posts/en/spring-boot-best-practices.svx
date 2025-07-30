@@ -1,0 +1,73 @@
+---
+title: Spring Boot Best Practices
+description: Essential best practices for Spring Boot applications.
+date: 2024-01-28
+author: Typhoon
+categories:
+  - Backend Development
+tags:
+  - spring-boot
+  - java
+  - best-practices
+readingTime: 3
+---
+
+# Spring Boot Best Practices
+
+A quick overview of Spring Boot best practices for demo purposes.
+
+## Project Structure
+
+```
+com.example.app
+├── config/
+├── controller/
+├── service/
+├── repository/
+└── Application.java
+```
+
+## Configuration
+
+Use `@ConfigurationProperties` for grouped settings:
+
+```java
+@ConfigurationProperties(prefix = "app")
+public class AppProperties {
+    private String name;
+    private String version;
+    // getters and setters
+}
+```
+
+## REST API Design
+
+```java
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+    
+    @GetMapping("/{id}")
+    public User getUser(@PathVariable Long id) {
+        return userService.findById(id);
+    }
+}
+```
+
+## Exception Handling
+
+```java
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+    
+    @ExceptionHandler(NotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ErrorResponse handleNotFound(NotFoundException e) {
+        return new ErrorResponse(e.getMessage());
+    }
+}
+```
+
+## Summary
+
+These are basic Spring Boot patterns for demo purposes. Real applications would include more comprehensive examples.

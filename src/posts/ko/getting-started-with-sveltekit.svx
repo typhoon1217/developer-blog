@@ -1,0 +1,74 @@
+---
+title: "SvelteKit 시작하기"
+description: "현대적인 웹 애플리케이션 구축을 위한 SvelteKit 기초를 배워보세요."
+date: "2024-01-15"
+published: true
+featured: true
+author: "Typhoon"
+tags: ["svelte", "sveltekit", "javascript", "튜토리얼"]
+categories: ["Frontend Development"]
+---
+
+# SvelteKit 시작하기
+
+데모용 SvelteKit 간단 소개입니다.
+
+## 왜 SvelteKit인가?
+
+SvelteKit의 장점:
+
+- **성능**: 바닐라 JavaScript로 컴파일
+- **단순성**: 배우고 사용하기 쉬움
+- **풀스택**: 내장 SSR과 API 라우트
+
+## 빠른 설정
+
+```bash
+npm create svelte@latest my-app
+cd my-app
+npm install
+npm run dev
+```
+
+## 기본 라우팅
+
+```
+src/routes/
+├── +page.svelte      # /
+├── about/
+│   └── +page.svelte  # /about
+└── blog/
+    └── +page.svelte  # /blog
+```
+
+## 데이터 로딩
+
+```javascript
+// +page.js
+export async function load({ fetch }) {
+    const response = await fetch('/api/data');
+    const data = await response.json();
+    
+    return {
+        data
+    };
+}
+```
+
+## 컴포넌트
+
+```svelte
+<script>
+    export let title;
+    export let content;
+</script>
+
+<article>
+    <h2>{title}</h2>
+    <p>{content}</p>
+</article>
+```
+
+## 요약
+
+SvelteKit은 뛰어난 성능과 개발자 경험을 제공하는 현대적인 웹 개발 접근방식입니다. 이 데모는 기본 개념을 보여줍니다.

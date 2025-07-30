@@ -1,0 +1,115 @@
+{
+	"site": {
+		"title": "Typhoon.dev",
+		"description": "리눅스를 좋아하는 개발자의 블로그"
+	},
+	"nav": {
+		"home": "홈",
+		"blog": "블로그",
+		"categories": "카테고리",
+		"about": "소개"
+	},
+	"theme": {
+		"light": "라이트 모드",
+		"dark": "다크 모드",
+		"toggle": "테마 변경"
+	},
+	"blog": {
+		"readMore": "더 읽기",
+		"minRead": "{minutes}분 읽기",
+		"publishedOn": "{date} 게시됨",
+		"updatedOn": "{date} 수정됨",
+		"tableOfContents": "목차",
+		"backToBlog": "블로그로 돌아가기",
+		"noPostsYet": "아직 게시글이 없습니다",
+		"checkBackSoon": "새로운 콘텐츠를 곧 확인해보세요!",
+		"viewAllPosts": "모든 게시글 보기",
+		"latestPosts": "최신 게시글",
+		"stayUpToDate": "최신 생각과 인사이트를 받아보세요"
+	},
+	"categories": {
+		"exploreTopics": "주제 탐색",
+		"discoverContent": "다양한 기술과 개발 분야의 콘텐츠를 발견하세요",
+		"backend": {
+			"name": "백엔드 개발",
+			"description": "Java/Spring, API 설계, 백엔드 아키텍처 인사이트"
+		},
+		"infrastructure": {
+			"name": "인프라 & DevOps",
+			"description": "리눅스, 도커, 클라우드 플랫폼, 인프라 최적화"
+		},
+		"linux": {
+			"name": "리눅스 & 시스템",
+			"description": "아치 리눅스, 시스템 관리, 커맨드라인 마스터리"
+		},
+		"learning": {
+			"name": "학습 여정",
+			"description": "학습 노트, 신기술, 스킬 개발"
+		},
+		"daily-life": {
+			"name": "개발자 일상",
+			"description": "개인 경험, 인사이트, 개발자로서의 삶"
+		},
+		"posts": "게시글",
+		"browsePosts": "게시글 둘러보기",
+		"blogStatistics": "블로그 통계",
+		"totalPosts": "전체 게시글",
+		"tags": "태그",
+		"minutesRead": "읽은 시간(분)",
+		"backToCategories": "모든 카테고리로 돌아가기",
+		"noPostsInCategory": "이 카테고리에는 아직 게시글이 없습니다"
+	},
+	"hero": {
+		"welcome": "환영합니다",
+		"readBlogPosts": "블로그 읽기",
+		"aboutMe": "소개"
+	},
+	"footer": {
+		"connect": "connect",
+		"allRightsReserved": "all rights reserved",
+		"privacy": "privacy",
+		"terms": "terms"
+	},
+	"author": {
+		"name": "typhoon",
+		"bio": "리눅스를 좋아하는 개발자."
+	},
+	"about": {
+		"description": "이 블로그에 대해 더 알아보세요",
+		"subtitle": "블로그 뒤의 사람을 알아가세요",
+		"title": "백엔드 개발자",
+		"location": "대한민국 서울",
+		"hello": "안녕하세요!",
+		"technicalStack": "기술 스택",
+		"languagesCore": "언어 및 핵심 기술",
+		"primary": "주요",
+		"frontend": "프론트엔드",
+		"backendFrameworks": "백엔드 및 프레임워크",
+		"databases": "데이터베이스",
+		"devopsInfra": "DevOps & 인프라",
+		"devEnvironment": "개발 환경",
+		"development": "개발",
+		"server": "서버",
+		"tools": "도구",
+		"whatYoullFind": "여기서 만날 수 있는 것들",
+		"blogDescription": "이 블로그는 제가 인사이트, 학습, 실용적인 솔루션을 공유하는 디지털 저널입니다:",
+		"backendDesc": "Java/Spring 튜토리얼, API 설계 패턴, 아키텍처 인사이트",
+		"infrastructureDesc": "리눅스 관리, Docker 워크플로우, 인프라 최적화",
+		"linuxDesc": "아치 리눅스 팁, 커맨드라인 마스터리, 시스템 관리",
+		"learningDesc": "신기술, 학습 노트, 스킬 개발",
+		"dailyDesc": "개인 경험과 개발자 생활에 대한 성찰",
+		"currentlyWorking": "현재 작업 중",
+		"futureLearning": "미래 학습 목표",
+		"infraDevops": "인프라 & DevOps",
+		"langFrameworks": "언어 & 프레임워크",
+		"letsConnect": "함께 연결해요",
+		"connectDescription": "저는 동료 개발자 및 기술 애호가들과 연결하는 것을 좋아합니다. 부담없이 연락해주세요:",
+		"connectQuestions": "제 포스트에 대한 질문이 있으신 경우",
+		"connectDiscuss": "기술이나 개발 실무에 대해 논의하고 싶으신 경우",
+		"connectSuggestions": "다루었으면 하는 주제에 대한 제안이 있으신 경우",
+		"connectHello": "그냥 안녕하고 인사하고 싶으신 경우!",
+		"githubAchievements": "GitHub 업적",
+		"memberKernel": "@Kernel360 멤버 • 클라우드 네이티브 기술과 실용적인 인프라 솔루션에 대한 지식을 지속적으로 확장하고 있습니다."
+	}
+}
+

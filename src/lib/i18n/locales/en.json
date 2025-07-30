@@ -1,0 +1,115 @@
+{
+	"site": {
+		"title": "Typhoon.dev",
+		"description": "Backend Developer • Linux Enthusiast • Infrastructure Optimizer - Sharing insights on Java/Spring, DevOps, and practical solutions"
+	},
+	"nav": {
+		"home": "Home",
+		"blog": "Blog",
+		"categories": "Categories",
+		"about": "About"
+	},
+	"theme": {
+		"light": "Light mode",
+		"dark": "Dark mode",
+		"toggle": "Toggle theme"
+	},
+	"blog": {
+		"readMore": "Read more",
+		"minRead": "{minutes} min read",
+		"publishedOn": "Published on {date}",
+		"updatedOn": "Updated on {date}",
+		"tableOfContents": "Table of Contents",
+		"backToBlog": "Back to blog",
+		"noPostsYet": "No posts yet",
+		"checkBackSoon": "Check back soon for the latest content!",
+		"viewAllPosts": "View all posts",
+		"latestPosts": "Latest Posts",
+		"stayUpToDate": "Stay up to date with the latest thoughts and insights"
+	},
+	"categories": {
+		"exploreTopics": "Explore Topics",
+		"discoverContent": "Discover content across different areas of technology and development",
+		"backend": {
+			"name": "Backend Development",
+			"description": "Java/Spring, API design, and backend architecture insights"
+		},
+		"infrastructure": {
+			"name": "Infrastructure & DevOps",
+			"description": "Linux, Docker, cloud platforms, and infrastructure optimization"
+		},
+		"linux": {
+			"name": "Linux & Systems",
+			"description": "Arch Linux, system administration, and command-line mastery"
+		},
+		"learning": {
+			"name": "Learning Journey",
+			"description": "Study notes, new technologies, and skill development"
+		},
+		"daily-life": {
+			"name": "Daily Dev Life",
+			"description": "Personal experiences, insights, and life as a developer"
+		},
+		"posts": "posts",
+		"browsePosts": "Browse posts",
+		"blogStatistics": "Blog Statistics",
+		"totalPosts": "Total Posts",
+		"tags": "Tags",
+		"minutesRead": "Minutes Read",
+		"backToCategories": "Back to all categories",
+		"noPostsInCategory": "No posts in this category yet"
+	},
+	"hero": {
+		"welcome": "Welcome to",
+		"readBlogPosts": "Read Blog Posts",
+		"aboutMe": "About Me"
+	},
+	"footer": {
+		"connect": "Connect",
+		"allRightsReserved": "All rights reserved",
+		"privacy": "Privacy",
+		"terms": "Terms"
+	},
+	"author": {
+		"name": "JungwooShin",
+		"bio": "Backend developer passionate about Linux and crafting practical solutions. Specialized in Java/Spring with expertise in infrastructure optimization."
+	},
+	"about": {
+		"description": "Learn more about Jungwoo Shin and this blog",
+		"subtitle": "Get to know the person behind the blog",
+		"title": "Backend Developer",
+		"location": "Seoul, South Korea",
+		"hello": "Hello there!",
+		"technicalStack": "Technical Stack",
+		"languagesCore": "Languages & Core Skills",
+		"primary": "Primary",
+		"frontend": "Frontend",
+		"backendFrameworks": "Backend & Frameworks",
+		"databases": "Databases",
+		"devopsInfra": "DevOps & Infrastructure",
+		"devEnvironment": "Development Environment",
+		"development": "Development",
+		"server": "Server",
+		"tools": "Tools",
+		"whatYoullFind": "What You'll Find Here",
+		"blogDescription": "This blog serves as my digital journal where I share insights, learnings, and practical solutions:",
+		"backendDesc": "Java/Spring tutorials, API design patterns, and architecture insights",
+		"infrastructureDesc": "Linux administration, Docker workflows, and infrastructure optimization",
+		"linuxDesc": "Arch Linux tips, command-line mastery, and system administration",
+		"learningDesc": "New technologies, study notes, and skill development",
+		"dailyDesc": "Personal experiences and reflections on developer life",
+		"currentlyWorking": "Currently Working On",
+		"futureLearning": "Future Learning Goals",
+		"infraDevops": "Infrastructure & DevOps",
+		"langFrameworks": "Languages & Frameworks",
+		"letsConnect": "Let's Connect",
+		"connectDescription": "I love connecting with fellow developers and tech enthusiasts. Feel free to reach out if you:",
+		"connectQuestions": "Have questions about any of my posts",
+		"connectDiscuss": "Want to discuss technology or development practices",
+		"connectSuggestions": "Have suggestions for topics you'd like me to cover",
+		"connectHello": "Just want to say hello!",
+		"githubAchievements": "GitHub Achievements",
+		"memberKernel": "Member of @Kernel360 • Always expanding knowledge in cloud-native technologies and practical infrastructure solutions."
+	}
+}
+

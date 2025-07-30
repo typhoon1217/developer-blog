@@ -1,0 +1,32 @@
+---
+title: Welcome to Typhoon.dev
+description: Introducing my new developer blog where I'll share insights on backend development, Linux, and infrastructure optimization.
+date: 2024-01-27
+author: Typhoon
+categories:
+  - Daily Dev Life
+tags:
+  - introduction
+  - blog
+  - welcome
+readingTime: 3
+---
+
+# Welcome to Typhoon.dev
+
+Welcome to this demo developer blog!
+
+## About This Blog
+
+This is a minimal demo blog showcasing various features:
+
+- **Clean Design**: Simple black and white theme
+- **Markdown Support**: Full markdown capabilities
+- **Syntax Highlighting**: Beautiful code blocks
+- **Internationalization**: Multi-language support
+
+## Demo Content
+
+Explore our demo posts to see the blog features in action.
+
+Thank you for visiting!

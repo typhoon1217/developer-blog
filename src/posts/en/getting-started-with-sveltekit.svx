@@ -1,0 +1,74 @@
+---
+title: "Getting Started with SvelteKit"
+description: "Learn the basics of SvelteKit for building modern web applications."
+date: "2024-01-15"
+published: true
+featured: true
+author: "Typhoon"
+tags: ["svelte", "sveltekit", "javascript", "tutorial"]
+categories: ["Frontend Development"]
+---
+
+# Getting Started with SvelteKit
+
+A brief introduction to SvelteKit for demo purposes.
+
+## Why SvelteKit?
+
+SvelteKit offers:
+
+- **Performance**: Compiled to vanilla JavaScript
+- **Simplicity**: Easy to learn and use
+- **Full-Stack**: Built-in SSR and API routes
+
+## Quick Setup
+
+```bash
+npm create svelte@latest my-app
+cd my-app
+npm install
+npm run dev
+```
+
+## Basic Routing
+
+```
+src/routes/
+├── +page.svelte      # /
+├── about/
+│   └── +page.svelte  # /about
+└── blog/
+    └── +page.svelte  # /blog
+```
+
+## Loading Data
+
+```javascript
+// +page.js
+export async function load({ fetch }) {
+    const response = await fetch('/api/data');
+    const data = await response.json();
+    
+    return {
+        data
+    };
+}
+```
+
+## Components
+
+```svelte
+<script>
+    export let title;
+    export let content;
+</script>
+
+<article>
+    <h2>{title}</h2>
+    <p>{content}</p>
+</article>
+```
+
+## Summary
+
+SvelteKit provides a modern approach to web development with excellent performance and developer experience. This demo shows the basic concepts.
